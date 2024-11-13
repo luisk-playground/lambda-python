@@ -1,0 +1,14 @@
+---
+name: Deploy dev
+
+on:
+  push:
+    branches: [ certification ]
+
+jobs:
+  deploy-dev:
+    name: Deploy dev
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy dev
+        run: echo Deploy dev

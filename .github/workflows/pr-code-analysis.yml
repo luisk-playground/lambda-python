@@ -1,0 +1,15 @@
+---
+name: Code Analysis from PR to development
+
+on:
+  pull_request:
+    types: [ opened, synchronize ]
+    branches: [ development ]
+
+jobs:
+  pr-code-analysis:
+    name: Automate analysis
+    runs-on: ubuntu-latest
+    steps:
+      - name: Analysis
+        run: echo Analysis
